@@ -105,16 +105,6 @@ Citizen.CreateThread(function()
 	end
 end)
 
-local timeron = false
-local second = 0
-local minute = 0
-
-RegisterNetEvent("yoda:cooldown_cl")
-AddEventHandler("yoda:cooldown_cl", function(Something, Something2)
-	minute = Something
-	second = Something2
-end)
-
 Citizen.CreateThread(function()
     while true do
 		Citizen.Wait(0)
