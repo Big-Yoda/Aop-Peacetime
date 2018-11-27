@@ -121,14 +121,5 @@ Citizen.CreateThread(function()
             DrawTxt(x2, y2, 1.0,1.0,0.45, "~p~Discord: ~w~" .. display.ts, 255, 255, 255, 255)
             DrawTxt(x3, y3, 1.0,1.0,0.45, "~p~Area Of Roleplay: ~w~" .. aop, 255, 255, 255, 255)
             DrawTxt(0.660, 1.450, 1.0,1.0,0.45, "~p~Peacetime: ~w~" .. peacetimestatus, 255, 255, 255, 255)
-        if second < 10 and minute < 1 then
-            DrawTxt(0.660, 1.250, 1.0,1.0,0.45, "~p~Priority Cooldown: ~w~(~p~0"..minute.."~w~:~p~0"..second.."~w~)", 255, 255, 255, 255)
-        elseif second < 10 then
-            DrawTxt(0.660, 1.250, 1.0,1.0,0.45, "~p~Priority Cooldown: ~w~(~p~"..minute.."~w~:~p~0"..second.."~w~)", 255, 255, 255, 255) 
-        elseif minute < 1 then
-            DrawTxt(0.660, 1.250, 1.0,1.0,0.45, "~p~Priority Cooldown: ~w~(~p~0"..minute.."~w~:~p~"..second.."~w~)", 255, 255, 255, 255) 
-        else
-		    DrawTxt(0.660, 1.250, 1.0,1.0,0.45, "~p~Priority Cooldown: ~w~(~p~"..minute.."~w~:~p~"..second.."~w~)", 255, 255, 255, 255)
-        end
     end
 end)
