@@ -3,7 +3,7 @@ local aop = "Sandy Shores/Harmony/Grapeseed"
 local s = ""
 
 RegisterCommand("aop", function(source, args, rawCommand)
-if IsPlayerAceAllowed(source, "mgn-aop") then
+if IsPlayerAceAllowed(source, "yoda-aop") then
     if args[1] ~= nil then
         aop = table.concat(args, " ")
         TriggerEvent("yodaaop:sync_sv")
@@ -31,7 +31,7 @@ end)
 peacetimeon = false
 
 RegisterCommand("peacetime", function(source, args, raw)
-if IsPlayerAceAllowed(source, "mgn-aop") then
+if IsPlayerAceAllowed(source, "yoda-aop") then
 	if peacetimeon == true then
 		peacetimeon = false
 		TriggerEvent("yodapt:sync_sv", peacetimeon)
@@ -45,7 +45,7 @@ end
 end)
 
 RegisterCommand("cooldown", function(source, args, raw)
-if IsPlayerAceAllowed(source, "mgn-aop") then
+if IsPlayerAceAllowed(source, "yoda-aop") then
 	local time = tonumber(args[1])
 	if time == nil or time == "" then
 		TriggerEvent("yoda:cooldown_sv", 15)
@@ -64,7 +64,7 @@ end
 end)
 
 RegisterCommand("reset", function(source, args, raw)
-if IsPlayerAceAllowed(source, "mgn-aop") then
+if IsPlayerAceAllowed(source, "yoda-aop") then
 	second = 0
 	minute = 0
 else
